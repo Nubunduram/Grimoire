@@ -1,11 +1,12 @@
 const http = require('http');
-const app = require('./app');
+const app = require('./app'); 
 
-const normalizePort = val => {
-  const port = parseInt(val, 10);
+const normalizePort = value => { 
+
+  const port = parseInt(value, 10);
 
   if (isNaN(port)) {
-    return val;
+    return value;
   }
   if (port >= 0) {
     return port;
@@ -15,12 +16,17 @@ const normalizePort = val => {
 
 const port = normalizePort(process.env.PORT || '4000');
 
+// gives the port to the express app
 app.set('port', port);
 
+
+// provides structured error handling for common scenarios that may occur during the setup of the server
 const errorHandler = error => {
+  
   if (error.syscall !== 'listen') {
     throw error;
   }
+
   const address = server.address();
   const bind = typeof address === 'string' ? 'pipe ' + address : 'port: ' + port;
   switch (error.code) {
@@ -37,9 +43,11 @@ const errorHandler = error => {
   }
 };
 
+
 const server = http.createServer(app);
 
 server.on('error', errorHandler);
+
 server.on('listening', () => {
   const address = server.address();
   const bind = typeof address === 'string' ? 'pipe ' + address : 'port ' + port;

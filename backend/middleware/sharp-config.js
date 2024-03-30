@@ -6,7 +6,7 @@ const resizeImage = async (req, res, next) => {
         try {
             const newFilename = req.file.filename.replace(/\.[^.]+$/, ".webp");
             await sharp(req.file.path)
-                .resize({ width: 405, height: 568 }) // Set the desired width and height
+                .resize({ width: 405, height: 568 })
                 .webp({ quality: 50 }) 
                 .toFile(`images/${newFilename}`);
             // Delete the original image

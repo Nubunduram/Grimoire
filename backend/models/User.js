@@ -7,6 +7,7 @@ const userSchema = mongoose.Schema({
     password: { type: String, required: true}
 })
 
+// Check if unique before saving in the DB
 userSchema.plugin(uniqueValidator);
 
 module.exports = mongoose.model('User', userSchema);
