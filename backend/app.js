@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require('mongoose');
 const path = require('path');
+require("dotenv").config();
 
 const bookRoutes = require('./routes/book');
 const userRoutes = require('./routes/user');
@@ -8,7 +9,7 @@ const userRoutes = require('./routes/user');
 const app = express();
 
 // Connect to DB
-mongoose.connect('mongodb+srv://TestUser:TestUser123@mon-vieux-grimoire.ctd3w9q.mongodb.net/?retryWrites=true&w=majority&appName=mon-vieux-grimoire',
+mongoose.connect(process.env.MONGODB_URI,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true
