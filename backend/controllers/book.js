@@ -39,13 +39,14 @@ exports.getOneBook = (req, res, next) => {
 
 exports.createBook = (req, res, next) => {
     const bookObject = JSON.parse(req.body.book);
+    // check if multer processed the file
     if (!req.file) {
         return res.status(400).json({ message: 'File missing' });
     } else {
         delete bookObject._id;
         delete bookObject._userId;
 
-        if (bookObject.ratings[0].grade === 0) {
+        if (!bookObject.ratings[0].grade) {
             bookObject.ratings = [];
         }
 
@@ -106,6 +107,7 @@ exports.addBookRating = (req, res, next) => {
 };
 
 exports.modifyBook = (req, res, next) => {
+    // Check if the picture has changed then create bookObject with new img or old infos
     const bookObject = req.file ? { ...JSON.parse(req.body.book), imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}` } : { ...req.body };
     delete bookObject._userId;
 
@@ -114,12 +116,10 @@ exports.modifyBook = (req, res, next) => {
             if (book.userId != req.auth.userId) {
                 return res.status(403).json({ message: 'Unauthorized request' });
             }
-
             if (req.file) {
                 const filename = book.imageUrl.split('/images/')[1];
                 fs.unlinkSync(`images/${filename}`);
             }
-
             return Book.updateOne({ _id: req.params.id }, { ...bookObject, _id: req.params.id });
         })
         .then(() => {
@@ -139,7 +139,6 @@ exports.deleteBook = (req, res, next) => {
             if (book.userId != req.auth.userId) {
                 res.status(403).json({ message: 'Unauthorized request' })
             } else {
-
                 // Delete file from the back end (images folder)
                 const filename = book.imageUrl.split('/images/')[1];
                 fs.unlink(`images/${filename}`, () => {
