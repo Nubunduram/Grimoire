@@ -1,8 +1,4 @@
-let API_URL = 'https://mon-vieux-grimoire-back-2984d53afe51.herokuapp.com';
-
-if (process.env.NODE_ENV === 'production') {
-  API_URL = 'https://mon-vieux-grimoire-back-2984d53afe51.herokuapp.com';
-}
+const API_URL = 'https://mon-vieux-grimoire-back-2984d53afe51.herokuapp.com';
 
 export const API_ROUTES = {
   SIGN_UP: `${API_URL}/api/auth/signup`,
