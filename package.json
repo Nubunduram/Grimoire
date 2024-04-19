@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "cd backend && npm run server",
-    "startfront": "react-scripts start",
+    "front": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
