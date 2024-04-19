@@ -10,6 +10,7 @@ export const API_ROUTES = {
 // Other routes...
 
 export const APP_ROUTES = {
+  HOME: '/Grimoire',
   SIGN_UP: '/Grimoire/Inscription',
   SIGN_IN: '/Grimoire/Connexion',
   ADD_BOOK: '/Grimoire/Ajouter',
