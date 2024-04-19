@@ -10,9 +10,9 @@ export const API_ROUTES = {
 // Other routes...
 
 export const APP_ROUTES = {
-  SIGN_UP: '/Inscription',
-  SIGN_IN: '/Connexion',
-  ADD_BOOK: '/Ajouter',
-  BOOK: '/livre/:id',
-  UPDATE_BOOK: 'livre/modifier/:id',
+  SIGN_UP: '/Grimoire/Inscription',
+  SIGN_IN: '/Grimoire/Connexion',
+  ADD_BOOK: '/Grimoire/Ajouter',
+  BOOK: '/Grimoire/livre/:id',
+  UPDATE_BOOK: '/Grimoire/livre/modifier/:id',
 };
