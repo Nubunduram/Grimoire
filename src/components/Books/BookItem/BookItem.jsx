@@ -18,7 +18,7 @@ function BookItem({ book, size }) {
       break;
   }
   return (
-    <Link to={`/livre/${book.id}`} className={styles.BookItem}>
+    <Link to={`/Grimoire/livre/${book.id}`} className={styles.BookItem}>
       <article>
         <img className={styles.BookImage} src={book.imageUrl} alt={`${book.title}, ${book.author} - ${book.year}`} />
         <div className={styles.BookInfo}>
