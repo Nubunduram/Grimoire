@@ -1,7 +1,7 @@
-let API_URL = 'http://localhost:4000';
+let API_URL = 'https://mon-vieux-grimoire-back-2984d53afe51.herokuapp.com';
 
 if (process.env.NODE_ENV === 'production') {
-  API_URL = 'https://mon-vieux-grimoire-back-2984d53afe51.herokuapp.com/';
+  API_URL = 'https://mon-vieux-grimoire-back-2984d53afe51.herokuapp.com';
 }
 
 export const API_ROUTES = {
