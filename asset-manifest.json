@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Grimoire/static/css/main.ba884700.css",
-    "main.js": "/Grimoire/static/js/main.07b905ff.js",
+    "main.js": "/Grimoire/static/js/main.5b956e69.js",
     "static/js/787.2c0e5b38.chunk.js": "/Grimoire/static/js/787.2c0e5b38.chunk.js",
     "static/media/home_banner.jpg": "/Grimoire/static/media/home_banner.e160219c56381f5d72be.jpg",
     "static/media/book_delete.png": "/Grimoire/static/media/book_delete.f0aec92a2dde895664ec.png",
@@ -10,11 +10,11 @@
     "static/media/map_footer.png": "/Grimoire/static/media/map_footer.a4eb4130dd9828775917.png",
     "index.html": "/Grimoire/index.html",
     "main.ba884700.css.map": "/Grimoire/static/css/main.ba884700.css.map",
-    "main.07b905ff.js.map": "/Grimoire/static/js/main.07b905ff.js.map",
+    "main.5b956e69.js.map": "/Grimoire/static/js/main.5b956e69.js.map",
     "787.2c0e5b38.chunk.js.map": "/Grimoire/static/js/787.2c0e5b38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba884700.css",
-    "static/js/main.07b905ff.js"
+    "static/js/main.5b956e69.js"
   ]
 }
