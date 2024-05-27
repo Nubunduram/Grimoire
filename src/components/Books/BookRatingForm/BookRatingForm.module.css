@@ -29,6 +29,7 @@
     position: absolute;
     left: -10000px
 }
+
 .BookRatingForm form input[type="submit"] {
     padding: 20px 23px;
     border: none;
@@ -37,11 +38,20 @@
     font-size: 16px;
 }
 
-.Stars, .Stars label{
+.Stars,
+.Stars label {
     display: flex;
     margin-bottom: 22px;
+    flex-direction: row-reverse;
 }
 
-@media all and (max-width: 600px) {
-
+.Stars label svg {
+    cursor: pointer;
 }
+
+.Stars label:hover svg,
+.Stars label:nth-child(-n+4):hover~label svg {
+    color: #D9A963;
+}
+
+@media all and (max-width: 600px) {}
