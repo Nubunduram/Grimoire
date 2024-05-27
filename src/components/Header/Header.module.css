@@ -1,7 +1,7 @@
-.Header{
+.Header {
     font-family: 'Libre Baskerville', serif;
     background-color: #FFFFFF;
-    min-height: 91px;
+    padding: 24px 0;
     display: flex;
     align-items: center;
 }
@@ -9,6 +9,7 @@
 .Header div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .Header p {
@@ -22,11 +23,16 @@
 .Header ul li {
     padding-inline: 20px;
     list-style-type: none;
+    cursor: pointer;
+}
+
+.Header ul li:hover {
+    text-decoration: underline;
 }
 
 .Header ul li a {
     text-decoration: none;
-    color: black ;
+    color: black;
 }
 
 .Header a.activeLink {

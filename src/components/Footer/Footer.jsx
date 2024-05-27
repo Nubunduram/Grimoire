@@ -17,9 +17,9 @@ function Footer() {
           </a>
         </address>
       </div>
-      <p>01 12 23 34 45</p>
+      <p className={styles.fakeLink}>01 12 23 34 45</p>
       <p>Copyright 2022 - 2023</p>
-      <p>Mentions légales</p>
+      <p className={styles.fakeLink}>Mentions légales</p>
     </footer>
 
   );

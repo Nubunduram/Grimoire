@@ -1,4 +1,4 @@
-.Form{
+.Form {
     background-color: #F9F3EE;
     width: 30%;
     margin: auto;
@@ -7,7 +7,9 @@
     margin-block: 50px;
 
 }
-.Form, .Form label {
+
+.Form,
+.Form label {
     display: flex;
     flex-direction: column;
     font-family: "DM Sans", sans-serif;
@@ -16,8 +18,8 @@
 
 }
 
-.Form input[type="file"]{
- display: none;
+.Form input[type="file"] {
+    display: none;
 }
 
 .Form img {
@@ -26,9 +28,11 @@
     object-fit: cover;
     object-position: center;
 }
+
 .Form label {
     width: 100%;
 }
+
 .Form label p {
     margin-bottom: 15px;
 }
@@ -43,18 +47,30 @@
 }
 
 
-.Stars, .Stars label{
+.Stars,
+.Stars label {
     display: flex;
     flex: 1;
     margin-bottom: 22px;
     width: 50%;
     align-items: center;
+    flex-direction: row-reverse;
 }
 
 .Stars input {
     position: absolute;
     left: -10000px
 }
+
+.Stars label svg {
+    cursor: pointer;
+}
+
+.Stars label:hover svg,
+.Stars label:nth-child(-n+4):hover~label svg {
+    color: #D9A963;
+}
+
 
 .AddImage {
     display: flex;

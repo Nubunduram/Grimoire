@@ -16,12 +16,19 @@
     align-items: center;
 
 }
+
 .MapBlock a {
     color: #796157;
 }
+
 .MapBlock img {
     margin-right: 16px;
 }
-.MapLink {
 
+.fakeLink {
+    cursor: pointer;
+}
+
+.fakeLink:hover {
+    text-decoration: underline;
 }

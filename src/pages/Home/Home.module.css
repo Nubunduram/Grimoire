@@ -1,6 +1,6 @@
 .Home {
- position: relative;padding-top: 131px;
-
+    position: relative;
+    padding-top: 96px;
 }
 
 .banner {
@@ -20,8 +20,9 @@
     max-width: 1320px;
     background-color: #FFFFFF;
     margin: auto;
-    border-radius: 7px;
-    box-shadow:  0 4px 34px rgba(0, 0, 0, 0.07);;
+    border-radius: 25px;
+    box-shadow: 0 4px 34px rgba(0, 0, 0, 0.07);
+    ;
 
 }
 

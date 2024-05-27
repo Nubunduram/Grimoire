@@ -4,19 +4,87 @@
 */
 /*  */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,24 +92,43 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
   list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -59,7 +146,7 @@ code {
     monospace;
 }
 
-#root > div {
+#root>div {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -68,7 +155,7 @@ code {
 .container {
   width: 100%;
   max-width: 1440px;
-  margin:auto;
+  margin: auto;
 
 }
 
@@ -85,8 +172,32 @@ code {
   margin-bottom: 5em;
   color: #796157;
   font-family: "DM Sans", sans-serif;
-
   text-decoration: none;
+  padding-bottom: 2px;
+  line-height: 1.5;
+}
+
+.backArrow:hover {
+  text-decoration: underline;
+}
+
+@keyframes move {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.backArrow:hover svg {
+  animation: move 1s infinite;
 }
 
 h1 {
@@ -96,20 +207,24 @@ h1 {
   color: #796157;
 }
 
-button, .button {
-  color: #2C1810;
+button,
+.button {
+  color: #fff;
   background-color: #D9A963;
+  border: 2px solid #D9A963;
   text-decoration: none;
   padding: 20px;
   border-radius: 5px;
-  border: none;
   font-size: 16px;
+  font-weight: bold;
   transition: 0.5s;
+  cursor: pointer;
 }
 
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   text-decoration: none;
-  background-color: #B99056;
-  color: #fff;
-  transition: 0.5s;
+  color: #D9A963;
+  background-color: #fff;
+  transition: 0.2s;
 }
