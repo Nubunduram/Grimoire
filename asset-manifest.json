@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Grimoire/static/css/main.ba884700.css",
-    "main.js": "/Grimoire/static/js/main.5b956e69.js",
+    "main.css": "/Grimoire/static/css/main.dc931429.css",
+    "main.js": "/Grimoire/static/js/main.cbcd09e6.js",
     "static/js/787.2c0e5b38.chunk.js": "/Grimoire/static/js/787.2c0e5b38.chunk.js",
     "static/media/home_banner.jpg": "/Grimoire/static/media/home_banner.e160219c56381f5d72be.jpg",
     "static/media/book_delete.png": "/Grimoire/static/media/book_delete.f0aec92a2dde895664ec.png",
@@ -9,12 +9,12 @@
     "static/media/Logo.svg": "/Grimoire/static/media/Logo.16725d5f400454fc59f2d21c740b0a06.svg",
     "static/media/map_footer.png": "/Grimoire/static/media/map_footer.a4eb4130dd9828775917.png",
     "index.html": "/Grimoire/index.html",
-    "main.ba884700.css.map": "/Grimoire/static/css/main.ba884700.css.map",
-    "main.5b956e69.js.map": "/Grimoire/static/js/main.5b956e69.js.map",
+    "main.dc931429.css.map": "/Grimoire/static/css/main.dc931429.css.map",
+    "main.cbcd09e6.js.map": "/Grimoire/static/js/main.cbcd09e6.js.map",
     "787.2c0e5b38.chunk.js.map": "/Grimoire/static/js/787.2c0e5b38.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba884700.css",
-    "static/js/main.5b956e69.js"
+    "static/css/main.dc931429.css",
+    "static/js/main.cbcd09e6.js"
   ]
 }
