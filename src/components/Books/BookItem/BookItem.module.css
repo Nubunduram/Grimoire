@@ -59,6 +59,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    flex-direction: row-reverse;
 }
 
 @media all and (max-width: 600px) {

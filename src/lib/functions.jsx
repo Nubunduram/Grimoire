@@ -9,9 +9,9 @@ export function displayStars(rating) {
   const stars = [];
   for (let i = 0; i < 5; i += 1) {
     if (i < Math.round(rating)) {
-      stars.push(<FontAwesomeIcon key={`full-${i}`} icon={solid('star')} className={styles.full} />);
+      stars.unshift(<FontAwesomeIcon key={`full-${i}`} icon={solid('star')} className={styles.full} />);
     } else {
-      stars.push(<FontAwesomeIcon key={`empty-${i}`} icon={solid('star')} className={styles.empty} />);
+      stars.unshift(<FontAwesomeIcon key={`empty-${i}`} icon={solid('star')} className={styles.empty} />);
     }
   }
   return stars;
